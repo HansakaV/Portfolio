@@ -42,26 +42,36 @@
            width: 600px;
        }
 
-      main>aside{
+      main>aside>img{
           position: absolute;
           top: 30px;
           right: 100px;
           bottom: 0;
           margin: auto;
+          z-index: 2;
       }
-      #BackgroundCircle1{
-          background-color: cornflowerblue;
+
+     #BackgroundCircle1{
+          background-color: #33CCED;
           width: 450px;
           height: 450px;
           border-radius: 450px;
           position: absolute;
-          top: 30px;
+          top: 100px;
           right: 100px;
           bottom: 0;
           margin: auto;
+         z-index: 1;
 
       }
 
+       /* #BackgroundCircle1{
+            width: 200px;
+            height: 200px;
+            border-color: lightblue;
+            border-radius: 100%;
+            position: relative;
+        }*/
     </style>
 </head>
 <body>
@@ -92,7 +102,7 @@
 <aside>
     <div id="BackgroundCircle1"></div>
     <div id="BackgroundCircle2"></div>
-    <img src="Assets/Images/myphoto.png">
+    <img src="Assets/Images/myphoto.png" class="myImage" alt="myImageOnHere">
 </aside>
 
 
