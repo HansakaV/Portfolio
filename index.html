@@ -3,6 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <style>
+        header{
+            background: cornflowerblue;
+            position: relative;
+            height: 100px;
+        }
+        header>nav{
+            font-weight: bold;
+            font-size: 18px;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            margin: auto;
+
+        }
+       header>nav>ul{
+            list-style: none;
+        }
+       header>nav>ul>li{
+           display: inline;
+           margin: 0px 10px;
+       }
+       header>h2{
+           font-weight: bold;
+           font-size: 25px;
+           height: fit-content;
+           position: absolute;
+           top: 0;
+           left: 10px;
+           bottom: 0;
+           margin: auto;
+       }
+       #About{
+           height: 100px;
+           width: 600px;
+       }
+
+      main>aside{
+          position: absolute;
+          top: 30px;
+          right: 100px;
+          bottom: 0;
+          margin: auto;
+      }
+      #BackgroundCircle1{
+          background-color: cornflowerblue;
+          width: 450px;
+          height: 450px;
+          border-radius: 450px;
+          position: absolute;
+          top: 30px;
+          right: 100px;
+          bottom: 0;
+          margin: auto;
+
+      }
+
+    </style>
 </head>
 <body>
 <header>
@@ -22,19 +82,19 @@
     <h1>Mahesh Hansaka</h1>
     <h2>And I am A FullStack Developer</h2>
 
-    <div>
+    <div id="About">
         <p>
             Welcome to my portfolio!
             I am a dedicated full stack developer with a mastery of Java.
             With a strong foundation in both front-end and back-end technologies, I create seamless and efficient applications. Explore my projects and see how I bring ideas to life with clean, robust code and innovative solutions.
         </p>
     </div>
+<aside>
+    <div id="BackgroundCircle1"></div>
+    <div id="BackgroundCircle2"></div>
+    <img src="Assets/Images/myphoto.png">
+</aside>
 
-<div id="BackgroundCircle1">
-    <div id="BackgroundCircle2">
-        <img src="Assets/Images/myphoto.png">
-    </div>
-</div>
 
 </main>
 
