@@ -3,199 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="Assets/Styles/normalize.css">
     <style>
-
-        header{
+        header {
             background: #171D32;
-            position: relative;
+            display: flex;
+            justify-content: space-between; /* Space between title and nav */
+            align-items: center;
             height: 100px;
+            padding: 0 20px; /* Padding for better spacing */
         }
-        header>nav{
+
+        header h2 {
             font-weight: bold;
-            font-size: 18px;
+            font-size: 25px;
+            color: white;
+        }
+
+        header nav {
             height: fit-content;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Aligns list items in a row */
+        }
+
+        header nav ul li {
+            padding: 0 10px;
+        }
+
+        header>nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: #171D32;
+        }
+
+        #About {
+            height: 100px;
+            width: 600px;
+            color: white;
+        }
+
+        main > aside > img {
             position: absolute;
-            top: 0;
-            right: 10px;
+            top: 30px;
+            right: 120px;
             bottom: 0;
             margin: auto;
-
+            z-index: 2;
         }
-       header>nav>ul{
-            list-style: none;
+
+        main > h2 {
+            color: white;
+            font-weight: bolder;
+            font-size: 30px;
         }
-       header>nav>ul>li{
-           display: inline;
-           margin: 0px 10px;
-           color: white;
-       }
-       header>h2{
-           font-weight: bold;
-           font-size: 25px;
-           height: fit-content;
-           position: absolute;
-           top: 0;
-           left: 10px;
-           bottom: 0;
-           margin: auto;
-           color: white;
-       }
-       main{
-           background-color: #171D32;
-       }
-       #About{
-           height: 100px;
-           width: 600px;
-           color: white;
-       }
 
-      main>aside>img{
-          position: absolute;
-          top: 30px;
-          right: 120px;
-          bottom: 0;
-          margin: auto;
-          z-index: 2;
-      }
-      main>h2{
-          color: white;
-          font-weight: bolder;
-          font-size: 30px;
+        main > h1 {
+            color: white;
+            font-weight: bolder;
+            font-size: 50px;
+        }
 
-      }
-      main>h1{
-          color: white;
-          font-weight: bolder;
-          font-size: 50px;
+        #BackgroundCircle1 {
+            background-color: #33CCED;
+            width: 450px;
+            height: 450px;
+            border-radius: 450px;
+            position: absolute;
+            top: 160px;
+            right: 100px;
+            bottom: 0;
+            margin: auto;
+            z-index: 1;
+        }
 
-      }
+        #BackgroundCircle2 {
+            background-color: #33CCED;
+            width: 450px;
+            height: 450px;
+            border-radius: 450px;
+            position: absolute;
+            top: 90px;
+            right: 100px;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.8); /* Adding shadow */
+        }
 
-     #BackgroundCircle1{
-          background-color: #33CCED;
-          width: 450px;
-          height: 450px;
-          border-radius: 450px;
-          position: absolute;
-          top: 160px;
-          right: 100px;
-          bottom: 0;
-          margin: auto;
-         z-index: 1;
-
-
-     }
-     #BackgroundCircle2{
-         background-color: #33CCED;
-         width: 450px;
-         height: 450px;
-         border-radius: 450px;
-         position: absolute;
-         top: 90px;
-         right: 100px;
-         bottom: 0;
-         margin: auto;
-         /*z-index: 1;*/
-         box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.8); /* Adding shadow */
-
-
-     }
-
-       /* #BackgroundCircle1{
-            width: 200px;
-            height: 200px;
-            border-color: lightblue;
-            border-radius: 100%;
-            position: relative;
-        }*/
+        #mainSection {
+            background-color: #171D32;
+        }
     </style>
 </head>
 <body>
-<header>
-    <h2>Portfolio.</h2>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Gallery</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h2>Hello It's Me</h2>
-    <h1>Mahesh Hansaka</h1>
-    <h2>And I am A FullStack Developer</h2>
+<section id="mainSection">
+    <header>
+        <h2>Portfolio.</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Hello It's Me</h2>
+        <h1>Mahesh Hansaka</h1>
+        <h2>And I am A FullStack Developer</h2>
 
-    <div id="About">
-        <p>
-            Welcome to my portfolio!
-            I am a dedicated full stack developer with a mastery of Java.
-            With a strong foundation in both front-end and back-end technologies, I create seamless and efficient applications. Explore my projects and see how I bring ideas to life with clean, robust code and innovative solutions.
-        </p>
-    </div>
-<aside>
-    <div id="BackgroundCircle1"></div>
-    <div id="BackgroundCircle2"></div>
-    <img src="Assets/Images/myphoto.png" class="myImage" alt="myImageOnHere">
-</aside>
-
-
-</main>
-
-
-<section>
-    <h2>Education</h2>
-    <div>
-        <div>
-            <h3>Ordinary Level Examination 2018</h3>
-        </div>
-        <div>
-            <h3>Advanced Level Examination 2021 </h3>
-        </div>
-        <div>
-            <h3>Institute Of Software Engineering 2024 Present</h3>
-        </div>
-    </div>
-</section>
-
-
-<section>
-    <div>
-        <h2>Projects</h2>
-    </div>
-    <div>
-        <div>
-            <h3>First Semester Final Project</h3>
+        <div id="About">
             <p>
-                This is my Final project of First semester.
+                Welcome to my portfolio!
+                I am a dedicated full stack developer with a mastery of Java.
+                With a strong foundation in both front-end and back-end technologies, I create seamless and efficient applications. Explore my projects and see how I bring ideas to life with clean, robust code and innovative solutions.
             </p>
-            <button>View More</button>
         </div>
+        <aside>
+            <div id="BackgroundCircle1"></div>
+            <div id="BackgroundCircle2"></div>
+            <img src="Assets/Images/myphoto.png" class="myImage" alt="myImageOnHere">
+        </aside>
+    </main>
 
+    <section>
+        <h2>Education</h2>
         <div>
-            <h3>Saman Tyre House Project</h3>
-            <p>
-                This is my First Customer Project.I Did this For Tyre Center.
-            </p>
-            <button>View More</button>
+            <div>
+                <h3>Ordinary Level Examination 2018</h3>
+            </div>
+            <div>
+                <h3>Advanced Level Examination 2021</h3>
+            </div>
+            <div>
+                <h3>Institute Of Software Engineering 2024 Present</h3>
+            </div>
         </div>
+    </section>
 
+    <section>
         <div>
-            <h3>Dp Communication Project</h3>
-            <p>
-                This also My Another Customer Project.I Did this For Communication Shop
-            </p>
-            <button>View More</button>
+            <h2>Projects</h2>
         </div>
+        <div>
+            <div>
+                <h3>First Semester Final Project</h3>
+                <p>This is my Final project of First semester.</p>
+                <button>View More</button>
+            </div>
 
-    </div>
-</section>
+            <div>
+                <h3>Saman Tyre House Project</h3>
+                <p>This is my First Customer Project. I Did this For Tyre Center.</p>
+                <button>View More</button>
+            </div>
 
-<section>
-    <div>
-        <h2>Gallery</h2>
-    </div>
+            <div>
+                <h3>Dp Communication Project</h3>
+                <p>This also My Another Customer Project. I Did this For Communication Shop</p>
+                <button>View More</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Gallery</h2>
+        </div>
         <div>
             <img src="Assets/Images/gallery1.jpg">
         </div>
@@ -205,40 +189,34 @@
         <div>
             <img src="Assets/Images/gallery3.jpg">
         </div>
-
-
-
-</section>
-<footer>
-    <div>
-        Developed By Mahesh Hansaka
-        Student at IJSE
-        2024 @ All Rights Received
-    </div>
-    <section>
-        Follow me on Social Media
-        <div>
-            <img src="Assets/Images/icons8-facebook-144.png">
-            Mahesh Hansaka
-        </div>
-        <div>
-            <img src="Assets/Images/icons8-linkedin-96.png">
-            Mahesh Hansaka
-        </div>
-        <div>
-            <img src="Assets/Images/icons8-twitterx-144.png">
-            Mahesh Hansaka
-        </div>
-        <div>
-            <img src="Assets/Images/icons8-git-144.png">
-            HansakaV
-        </div>
-
     </section>
 
-
-
-</footer>
-
+    <footer>
+        <div>
+            Developed By Mahesh Hansaka
+            Student at IJSE
+            2024 @ All Rights Reserved
+        </div>
+        <section>
+            Follow me on Social Media
+            <div>
+                <img src="Assets/Images/icons8-facebook-144.png">
+                Mahesh Hansaka
+            </div>
+            <div>
+                <img src="Assets/Images/icons8-linkedin-96.png">
+                Mahesh Hansaka
+            </div>
+            <div>
+                <img src="Assets/Images/icons8-twitterx-144.png">
+                Mahesh Hansaka
+            </div>
+            <div>
+                <img src="Assets/Images/icons8-git-144.png">
+                HansakaV
+            </div>
+        </section>
+    </footer>
+</section>
 </body>
 </html>
